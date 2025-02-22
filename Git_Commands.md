@@ -49,9 +49,9 @@ To edit the last commit : `git commit -amend`
 ```
 
 **git rm**
-*Git rm is used to remove a collection of files from working tree or index*
+*git rm is used to remove a collection of files from working tree or index*
 
-Syntax: `git rm <file-name>
+Syntax: `git rm <file-name>`
 
 **git merge**
 *git merge allows you to merge branches from Git. It preserves the
@@ -105,3 +105,18 @@ example, private files or folders containing passwords, APIs etc. These files ar
 *The squash along with git merge produces the working tree. It indexes in the same way as that of the real merge but discards the merge history.*
 
 `git merge --squash origin/main`
+
+Use this in below situations.
+>1. When you have merged main into your branch and resolved conflicts.
+>2. When you need to overwrite the original commits.
+
+**git reflog**
+*The reflog records every change that is made in the repository. Apart from this, if some branch is lost from the repo, the recovery can be done using this command.*
+
+Syntax: `git reflog`
+
+**git revert**
+*Revert simply means to undo the changes. Therefore, it is an undo command in Git. Unlike traditional undo operation, the revert command does not delete any data. git
+revert is a commit operation, as it undo the specified commit.*
+
+Syntax: `git revert`
