@@ -88,7 +88,7 @@ Syntax:
 ```
 To create the stash: git stash
 To view all the stashed changes: git stash list
-To drop a stash: git stash drop <stash_id
+To drop a stash: git stash drop <stash_id>
 To delete all the stashes : git stash clear
 ```
 
@@ -120,3 +120,23 @@ Syntax: `git reflog`
 revert is a commit operation, as it undo the specified commit.*
 
 Syntax: `git revert`
+```
+To revert a commit: git revert <commit-id>
+TO edit the commit message before reverting: git revert -e <commit-id>
+```
+
+**git bisect**
+*The git bisect command is used to find the bisect position as shown. It bisects (divides) your history between the good and the bad commit range. It then moves
+through every commit id between this range and at each snapshot it allows you to test the code.*
+
+```
+git bisect start
+git bisect good v1.0
+git bisect bad 
+```
+
+**git cherry-pick**
+*Choosing a commit from one branch and applying it to another is known as cherry picking in Git. Following are the steps to cherry pick a commit*
+
+Syntax: `git cherry-pick <commit-id>`
+
