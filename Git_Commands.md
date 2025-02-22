@@ -8,7 +8,7 @@ handle everything from small to very large projects with speed and efficiency*
 ![Git Workflow]
 /git_practice/git_work_flow.png
 
-## Git commands##
+## Git commands
 **git clone**
 *git clone is a command which is used to clone or copy a target repository*
 
@@ -19,12 +19,12 @@ To clone from a specific branch: `git clone -b <branch_name> <repo_url>`
 
 **git branch**
 *A Branch is created to do and keep your changes until they are ready to merge.*
-
-To create a branch: `git branch <branch_name>`\n 
-To move to a branch: `git checkout <branch_name>`\n 
-To delete a branch in local: `git delete -d <branch_name>`\n 
+```
+To create a branch: `git branch <branch_name>`
+To move to a branch: `git checkout <branch_name>`
+To delete a branch in local: `git delete -d <branch_name>`
 To delete a branch in remote: `git push origin --delete <branch_name>`
-
+```
 **git checkout**
 *git checkout is used to know the current branch you are in and change to other branches*
 
@@ -86,5 +86,9 @@ To drop a stash: `git stash drop <stash_id`
 To delete all the stashes : `git stash clear`
 
 **git ignore**
+*At times, there are some files that we might want Git to ignore while commiting. For
+example, private files or folders containing passwords, APIs etc. These files are userspecific and hence, we can ignore these using the .gitignore.
+.gitignore is generated automatically inside the project directory and ignores the
+files to get committed to the repositories.*
 
-
+## Advanced Concepts.
